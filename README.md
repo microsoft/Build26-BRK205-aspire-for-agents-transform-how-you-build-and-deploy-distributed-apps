@@ -1,35 +1,3 @@
-# 🚀 Get Started
-
-**This repo is where attendees go to continue their learning after your session — and your Copilot agent will help you set it up.**
-
-### Step 1: Open your repo
-
-Open this repo in a **Codespace** (click the green **Code** button → **Create a Codespace**) — or clone it locally. Then open **GitHub Copilot Chat**.
-
-### Step 2: Add your content
-
-Give the agent something to work with. Drag files into the Explorer panel — session abstracts, outlines, screenshots, notes — and drop them in one of two places:
-
-| Where to put it | What goes there | Who sees it |
-|---|---|---|
-| **`_remove-before-publish/`** | Internal reference materials (abstracts, outlines, screenshots, planning docs) | **Copilot only** — never published |
-| **`/docs/`, `/src/`, or repo root** | Lab instructions, demo code, sample data, getting-started guides | **Attendees** — published with the repo |
-
-> 💡 Not sure? Start by dropping your session abstract or outline into `_remove-before-publish/`. The agent will figure out what to do with it.
-
-### Step 3: Ask the Agent
-
-Once your content is in the repo, use these three phrases with Copilot to build out your session repo:
-
-| Phrase to use with Copilot | What it does | When to run it |
-|---|---|---|
-| **"Help me get started"** | Sets up session title, description, outcomes, and owners | After you've added your session abstract or outline to the repo |
-| **"Help me refine content"** | Organizes your session content into the repo | Each time you add or update content |
-| **"Help me finalize"** | Final review, cleanup, and publication prep | When you're ready to publish |
-
-> 💡 **These three phrases are just the starting point.** Copilot can do much more — try asking it to brainstorm next steps for attendees, generate code samples, or build out your repo structure. Don't be afraid to put it in plan mode and ask for what you need.
-
----
 
 <a name="start-building"></a>
 <br>
@@ -39,72 +7,120 @@ Once your content is in the repo, use these three phrases with Copilot to build 
 
 # [Microsoft Build 2026](https://build.microsoft.com)
 
-## 🔥 BRKXXX: SESSION TITLE
+## BRK205: Aspire for agents: Transform how you build and deploy distributed apps
 
-### Session Description
+<a href="https://aspire.dev"><img src="img/aspire-logo-primary-horizontal.png" alt="Aspire logo" width="200"/></a>
 
-*Add Session Description*
+[Aspire](https://aspire.dev) is an agent-ready, code-first tool to compose, debug, and deploy any distributed app. It makes it easier to build, run, debug, and deploy services across any language, stack, or cloud. It’s free and open source at [github.com/microsoft/aspire](https://github.com/microsoft/aspire).
 
-### 🏫 Getting started in a guided session
+This repo is your companion for the **BRK205** session at Microsoft Build 2026. Dive in and start building with Aspire today!
 
-To get started in a guided lab session:
-- <!-- step 1 -->
-- <!-- step 2 -->
-- <!-- step 3 -->
+In this session, we explore two sides of the **Aspire + agents** story:
 
-### 🏠 Getting started in your own environment
+1. **Building with coding agents** — Use AI coding agents (like GitHub Copilot) to build, debug, and deploy distributed apps. The Aspire CLI, OpenTelemetry dashboard, skills, and structured app model give agents the context they need to understand and operate your entire stack.
+2. **Building agentic apps** — Use the Microsoft Foundry integration to orchestrate and deploy intelligent, agent-powered applications as part of your distributed system. See how you can go from local development to cloud deployment with the same model. 
 
-If you're following these steps at your own pace:
-- Clone this repository
-- Set up your development environment
-- <!-- step 3 -->
+### ✨ Why Aspire?
 
-### 🧠 Learning Outcomes
+- 🧩 **Code-centric control** — Define your entire stack in code. Type-safe, readable, and deployable anywhere.
+- 🔭 **Observability from the start** — Built-in OpenTelemetry gives you logs, traces, and health checks automatically.
+- 🚀 **Flexible deployments** — Kubernetes, cloud, on-prem — Aspire adapts to your environment.
+- 🤖 **Agent-ready** — Aspire is the control plane for agentic dev. AI coding agents use your app model and the Aspire CLI to understand, build, and operate your entire stack.
+- 🌍 **Multi-language** — Works with C#, JavaScript, TypeScript, Python, Java, Go, and more.
+
+Learn more on our website [Aspire.dev](https://aspire.dev) and read the [Aspire FAQ](https://aspire.dev/get-started/faq/).
+
+### 🏫 Materials from the session
+
+- *Session content (slides, demos, talk track) will be added here soon*
+- *Add recording when available after the conference*
+
+### 🧠 Learning outcomes
 
 By the end of this session, you will be able to:
 
-- <!-- outcome 1 -->
-- <!-- outcome 2 -->
-- <!-- outcome 3 -->
+- Understand how Aspire's agent-ready architecture helps coding agents build, debug, and deploy distributed apps
+- Use the Aspire CLI, dashboard, and skills to give AI agents deep context about your application
+- Build agentic applications using Aspire's Microsoft Foundry integration
+- Model multi-service architectures using the AppHost and deploy them confidently
 
-### 💬 Keep Learning with Copilot
+### 🏠 Getting started on your own
 
-Try these prompts with GitHub Copilot to explore the topics from this session. Open Copilot Chat in VS Code (`Ctrl+Alt+I` on Windows/Linux, `Cmd+Shift+I` on Mac), paste a prompt, and see what you learn. Try connecting the [Microsoft Learn MCP Server](#-microsoft-learn-mcp-server) for the latest official documentation.
+Ready to try Aspire? Here's the quickest path to your first app:
 
-Use these as a starting point — or write your own!
+1. **Install the Aspire CLI**
+   ```bash
+   # Bash
+   curl -sSL https://aspire.dev/install.sh | bash
 
-<!-- Prompts will be tailored to this session's content during repo setup. -->
+   # PowerShell
+   irm https://aspire.dev/install.ps1 | iex
+   ```
+   Verify it worked: `aspire --version`
 
-> *Prompts coming soon — check back after the session content is finalized.*
+2. **Create your first app**
+   ```bash
+   aspire new aspire-starter -n MyFirstApp -o MyFirstApp
+   cd MyFirstApp
+   aspire run
+   ```
+
+3. **Explore!** Open the Aspire dashboard in your browser to see logs, traces, and metrics for your running app.
+
+📖 Full walkthrough: [Build your first Aspire app](https://aspire.dev/get-started/first-app/)
+
+### 🤖 Set up Aspire for your coding agent
+
+Whether you're starting a brand-new app or adding Aspire to an existing project, one command gets you going:
+
+```bash
+aspire init
+```
+
+This sets up an [AppHost](https://aspire.dev/get-started/app-host/) for your application **and** configures your coding agent in one step — skills, MCP tools, and agent context are all wired up automatically. From there, your coding agent (GitHub Copilot, etc.) can understand your app's resources, inspect logs and traces, and help you build, debug, and deploy your distributed stack.
+
+Learn more in the [Aspire for AI coding agents](https://aspire.dev/get-started/ai-coding-agents/) documentation.
+
+### 💬 Keep learning with copilot
+
+Try these prompts with GitHub Copilot to explore the topics from this session. Open Copilot Chat in Visual Studio Code (`Ctrl+Alt+I` on Windows/Linux, `Cmd+Shift+I` on Mac), paste a prompt, and see what you learn.
+
+💡 **Tip:** Run `aspire agent init` in your project to set up Aspire skills and MCP tools for your coding agent. This gives Copilot (and other agents) deep understanding of your Aspire app — resources, endpoints, logs, traces, and more. See the [Aspire for AI coding agents](https://aspire.dev/get-started/ai-coding-agents/) docs for details.
+
+Use these prompts as a starting point — or write your own!
+
+- *"What is an Aspire AppHost and how do I define resources in it?"*
+- *"How does Aspire help coding agents understand and operate distributed apps?"*
+- *"Show me how to use the Aspire CLI to inspect logs and traces for debugging."*
+- *"How do I integrate Microsoft Foundry with an Aspire application to build agentic apps?"*
+- *"How do I deploy an Aspire app to Azure Container Apps?"*
 
 ### 💻 Technologies Used
 
-1. <!-- technology 1 -->
-1. <!-- technology 2 -->
-1. <!-- technology 3 -->
+1. [Aspire](https://aspire.dev) — Distributed application orchestration platform
+1. [Aspire CLI](https://aspire.dev/get-started/install-cli/) — Command-line tool for creating, managing, and debugging Aspire apps
+1. [Aspire Visual Studio Code Extension](https://aspire.dev/get-started/aspire-vscode-extension/) — Integrated Aspire experience in Visual Studio Code
+1. [Microsoft Foundry](https://ai.azure.com) — Platform for building and deploying agentic AI applications
+1. [OpenTelemetry](https://opentelemetry.io/) — Observability framework (built into Aspire)
+1. [Docker](https://www.docker.com/) or [Podman](https://podman.io/) — Container runtime for local development
 
-### 📚 Resources and Next Steps
+### 📚 Resources
 
 | Resource | Description |
 |:---------|:------------|
-| [https://aka.ms/build26-next-steps](https://aka.ms/build26-next-steps) | Explore lab and session repos to further your learning from Microsoft Build |
+| 🌐 [aspire.dev](https://aspire.dev) | Official Aspire website — docs, guides, and everything you need |
+| 🚀 [Build Your First App](https://aspire.dev/get-started/first-app/) | Step-by-step quickstart to create and run your first Aspire app |
+| 🧪 [Aspire Samples](https://github.com/microsoft/aspire-samples) | Official sample apps and reference architectures |
+| 💻 [Aspire on GitHub](https://github.com/microsoft/aspire) | Source code, issues, and contributions — it's all open source! |
+| 📝 [Aspire Blog](https://devblogs.microsoft.com/aspire) | Release updates, announcements, and deep dives from the team |
+| 💬 [Discord Community](https://discord.com/invite/raNPcaaSj8) | Chat with the Aspire team and community in real time |
+| 🦋 [Aspire on Bluesky](https://bsky.app/profile/aspire.dev) | Quick tips, community highlights, and the latest news |
+| 🐦 [Aspire on X](https://x.com/aspiredotdev) | Announcements, clips, and updates |
+| 🎥 [Aspire on YouTube](https://youtube.com/@aspiredotdev) | Sessions, deep-dive demos, conference talks, and livestreams |
+| 🟣 [Aspire on Twitch](https://twitch.tv/aspiredotdev) | Live community streams and pair-programming sessions |
+| 🎨 [Aspire Brand Assets](https://github.com/microsoft/aspire-brand) | Logos, colors, presentation decks, and brand guidance |
+| 🔗 [https://aka.ms/build26-next-steps](https://aka.ms/build26-next-steps) | Explore more lab and session repos from Microsoft Build |
 
-
-### 🌟 Microsoft Learn MCP Server
-
-The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the products and services covered in this session.
-
-**VS Code** — One click installation: 
-
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Learn_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft-learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-
-**GitHub Copilot CLI** — Run this to install the Learn MCP Server as a plugin:
-```
-/plugin install microsoftdocs/mcp
-```
-
-For more info, other clients, and to post questions, visit the [Learn MCP Server repo](https://aka.ms/learnmcp).
 
 ## Content Owners
 
@@ -115,9 +131,14 @@ For more info, other clients, and to post questions, visit the [Learn MCP Server
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/yourGitHubHandle">
-        <img src="https://github.com/yourGitHubHandle.png" width="100px;" alt="INSERT NAME HERE"/><br />
-        <sub><b>INSERT NAME HERE</b></sub></a><br />
+    <td align="center"><a href="https://github.com/davidfowl">
+        <img src="https://github.com/davidfowl.png" width="100px;" alt="David Fowler"/><br />
+        <sub><b>David Fowler, Distinguished Engineer</b></sub></a><br />
+            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+    </td>
+    <td align="center"><a href="https://github.com/DamianEdwards">
+        <img src="https://github.com/DamianEdwards.png" width="100px;" alt="Damian Edwards"/><br />
+        <sub><b>Damian Edwards, Principal Architect</b></sub></a><br />
             <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
     </td>
 </tr></table>
