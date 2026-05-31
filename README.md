@@ -11,7 +11,11 @@
 
 <a href="https://aspire.dev"><img src="img/aspire-logo-primary-horizontal.png" alt="Aspire logo" width="200"/></a>
 
-[Aspire](https://aspire.dev) is an agent-ready, code-first tool to compose, debug, and deploy any distributed app. It makes it easier to build, run, debug, and deploy services across any language, stack, or cloud. It’s free and open source at [github.com/microsoft/aspire](https://github.com/microsoft/aspire).
+[Aspire](https://aspire.dev) is an agent-ready, code-first tool to compose, debug, and deploy any distributed app. It makes it easier to build, run, debug, and deploy services across any language, stack, or cloud. It’s free and open source at [github.com/microsoft/aspire](https://aka.ms/aspire/build26/aspire-repo?utm_source=build-brk205-related-aspire-github-repo-cta&utm_medium=event&utm_campaign=msbuild-2026).
+
+**Aspire 13.4 is here!**
+- Get Aspire 13.4: [get.aspire.dev](https://get.aspire.dev)
+- Read our ["What's New" blog](https://aka.ms/aspire/build26/whats-new/blog?utm_source=build-brk205-related-aspire-whats-new-blog-cta&utm_medium=event&utm_campaign=msbuild-2026) and [release notes](https://aka.ms/aspire/build26/whats-new/docs?utm_source=build-brk205-related-aspire-release-notes-cta&utm_medium=event&utm_campaign=msbuild-2026).
 
 This repo is your companion for the **BRK205** session at Microsoft Build 2026. Dive in and start building with Aspire today!
 
@@ -34,6 +38,7 @@ Learn more on our website [Aspire.dev](https://aspire.dev) and read the [Aspire 
 
 - *Session content (slides, demos, talk track) will be added here soon*
 - *Add recording when available after the conference*
+
 
 ### 🧠 Learning outcomes
 
@@ -67,7 +72,7 @@ Ready to try Aspire? Here's the quickest path to your first app:
 
 3. **Explore!** Open the Aspire dashboard in your browser to see logs, traces, and metrics for your running app.
 
-📖 Full walkthrough: [Build your first Aspire app](https://aspire.dev/get-started/first-app/)
+📖 Full walkthrough: [Build your first Aspire app](https://aka.ms/aspire/build26?utm_source=build-brk205-related-try-aspire-cta&utm_medium=event&utm_campaign=msbuild-2026)
 
 ### 🤖 Set up Aspire for your coding agent
 
@@ -134,12 +139,17 @@ Use these prompts as a starting point — or write your own!
     <td align="center"><a href="https://github.com/davidfowl">
         <img src="https://github.com/davidfowl.png" width="100px;" alt="David Fowler"/><br />
         <sub><b>David Fowler, Distinguished Engineer</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+            <a href="https://github.com/davidfowl" title="talk">📢</a>
     </td>
     <td align="center"><a href="https://github.com/DamianEdwards">
         <img src="https://github.com/DamianEdwards.png" width="100px;" alt="Damian Edwards"/><br />
         <sub><b>Damian Edwards, Principal Architect</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+            <a href="https://github.com/DamianEdwards" title="talk">📢</a>
+    </td>
+        <td align="center"><a href="https://github.com/maddymontaquila">
+        <img src="https://github.com/maddymontaquila.png" width="100px;" alt="Maddy Montaquila"/><br />
+        <sub><b>Maddy Montaquila, Principal Product Manager</b></sub></a><br />
+            <a href="https://github.com/maddymontaquila" title="talk">📢</a>
     </td>
 </tr></table>
 
