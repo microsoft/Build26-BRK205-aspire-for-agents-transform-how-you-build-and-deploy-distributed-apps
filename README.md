@@ -36,8 +36,9 @@ Learn more on our website [Aspire.dev](https://aspire.dev) and read the [Aspire 
 
 ### 🏫 Materials from the session
 
-- *Session content (slides, demos, talk track) will be added here soon*
-- *Add recording when available after the conference*
+- [**Build BRK205 Session Page**](https://build.microsoft.com/en-US/sessions/BRK205?source=sessions) — includes session recording, transcript, presentation deck, and other relevant details.
+- [**Build 2026 Aspire agents demo**](https://github.com/microsoft/Build26-BRK205-aspire-for-agents-transform-how-you-build-and-deploy-distributed-apps/tree/main/src) — a repo for the compact Build 2026 demo for the thesis: Aspire gives developers and agents a shared, executable model of the app.
+
 
 
 ### 🧠 Learning outcomes
